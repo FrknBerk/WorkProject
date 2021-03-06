@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SwaggerAPI.Controllers.UsersController.GetAll">
+            <summary>
+            Get ALL Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerAPI.Controllers.UsersController.Add(Entities.Concrete.User)">
+            <summary>
+            Create a User
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
