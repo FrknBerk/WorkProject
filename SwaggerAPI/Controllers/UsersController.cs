@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Caching;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,13 @@ namespace SwaggerAPI.Controllers
             var list = _userService.GetAll();
             if (list != null)
             {
+                var cm = new MemoryCacheManager();
+                string cacheKey = "users";
+                if (cm.Contains(cacheKey))
+                {
+                    cm.Remove(cacheKey);
+                }
+                cm.Add(cacheKey, list);
                 return Ok(list);
             }
             return BadRequest();

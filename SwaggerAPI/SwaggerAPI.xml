@@ -17,5 +17,18 @@
             <param name="user"></param>
             <returns></returns>
         </member>
+        <member name="M:SwaggerAPI.Controllers.UsersController.Update(Entities.Concrete.User)">
+            <summary>
+            Update the User
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerAPI.Controllers.UsersController.Delete(Entities.Concrete.User)">
+            <summary>
+            Delete the User
+            </summary>
+            <param name="user"></param>
+        </member>
     </members>
 </doc>
