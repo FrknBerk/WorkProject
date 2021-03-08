@@ -1,0 +1,19 @@
+<table class="table">
+  <tr style="background-color:black;color: white;">
+    <th>Id</th>
+    <th>Ad</th>
+    <th>Soyad</th>
+    <th>Telefon</th>
+    <th>Sil</th>
+    <th>Güncelle</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <th>{{user.id}}</th>
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td>{{user.phone}}</td>
+    <td><a class="btn btn-danger" href="" role="button">Sil</a></td>
+    <td><a class="btn btn-info" href="" role="button">Güncelle</a></td>
+  </tr>
+</table>
+<button type="button" class="btn btn-success">Kullanıcı Ekle</button>
