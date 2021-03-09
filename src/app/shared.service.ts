@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'  
 })
 export class SharedService {
   readonly APIUrl ="https://localhost:44332/api";
