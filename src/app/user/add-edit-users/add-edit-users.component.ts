@@ -22,7 +22,7 @@ export class AddEditUsersComponent implements OnInit {
     this.lastName= this.user.lastName;
     this.phone = this.user.phone;
   }
-  addUser(){
+  addUsers(){
     var val = {
       id:this.id,
       firstName:this.firstName,
@@ -33,7 +33,7 @@ export class AddEditUsersComponent implements OnInit {
       alert("Kullanıcı Başarı ile Eklendi");
     });
   }
-  updateUser(){
+  updateUsers(){
     var val = {
       id:this.id,
       firstName:this.firstName,

@@ -13,16 +13,16 @@ export class SharedService {
   constructor(private http:HttpClient) { }
 
   getUsersList() : Observable<any[]> {
-    return this.http.get<any[]>(this.APIUrl+'/users');
+    return this.http.get<any>(this.APIUrl+'/Users');
   }
 
   addUsers(val :any){
-    return this.http.post(this.APIUrl+'/users',val);
+    return this.http.post(this.APIUrl+'/Users',val);
   }
   updateUsers(val :any){
-    return this.http.put(this.APIUrl+'/users',val);
+    return this.http.put(this.APIUrl+'/Users',val);
   }
   deleteUsers(val :any){
-    return this.http.delete(this.APIUrl+"/users",val);
+    return this.http.delete(this.APIUrl+"/Users/"+val);
   }
 }
